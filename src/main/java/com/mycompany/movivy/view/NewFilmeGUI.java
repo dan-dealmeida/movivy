@@ -1,16 +1,6 @@
 package com.mycompany.movivy.view;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author zelen
- */
-
-import com.mycompany.movivy.controller.FilmeController;
+import com.mycompany.movivy.controller.FilmeDAO;
 import com.mycompany.movivy.model.Filme;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -23,11 +13,11 @@ import javafx.stage.Stage;
 
 public class NewFilmeGUI extends Application {
 
-    private FilmeController filmeController;
+    private FilmeDAO filmeDAO;
 
     @Override
     public void start(Stage primaryStage) {
-        filmeController = new FilmeController(); 
+        filmeDAO = new FilmeDAO(); 
 
         primaryStage.setTitle("Gerenciamento de Filmes");
 
@@ -62,7 +52,7 @@ public class NewFilmeGUI extends Application {
         addButton.setOnAction(e -> {
             try {
                 int year = Integer.parseInt(yearInput.getText());
-                filmeController.adicionarFilme(new Filme(titleInput.getText(), genreInput.getText(), year, directorInput.getText()));
+                filmeDAO.adicionarFilme(new Filme(titleInput.getText(), genreInput.getText(), year, directorInput.getText()));
                 clearFields(titleInput, genreInput, yearInput, directorInput);
             } catch (NumberFormatException ex) {
                 System.out.println("Ano inválido"); // Ideally, show a dialog or a label message

@@ -1,14 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.movivy.model;
 
-/**
- *
- * @author zelen
- */
-public class Ator {
+import java.io.Serializable;
+
+public class Ator implements Serializable {
     // Atributos da classe
     private String nome;
     private int idade;

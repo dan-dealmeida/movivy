@@ -1,14 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.movivy.model;
 
-/**
- *
- * @author zelen
- */
-public class Filme {
+import java.io.Serializable;
+
+public class Filme implements Serializable {
     private String titulo;
     private String genero;
     private int ano;
@@ -71,4 +65,3 @@ public class Filme {
         return result;
     }
 }
-
