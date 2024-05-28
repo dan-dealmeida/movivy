@@ -13,7 +13,9 @@ Utilize uma interface gráfica simples e intuitiva para navegar pelo aplicativo.
 Funcionalidades:
 
 Armazenamento de dados:
-Leitura e escrita de dados em arquivos TXT separados para filmes, estúdios e atores.
+Primeira versão: Leitura e escrita de dados em arquivos TXT separados para filmes, estúdios e atores.
+Segunda Versão: Escrita e Leitura Binário
+
 Validação básica dos dados de entrada para garantir a integridade dos arquivos.
 Interface gráfica:
 Interface gráfica básica para visualizar, adicionar, editar e remover filmes, estúdios e atores.
